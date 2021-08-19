@@ -10,7 +10,7 @@ Date: 06/14/2021
 Assignment: Trivial Twitter application (Programming Assignment 1)
 
 
-Files:
+**Files:**
 
 ttweetsrv.c - A simple TCP connection-based server. The server listens for a request from the client and sends back the appropriate message 
 ttweetcl.c - A simple TCP connection-based client. The client can upload a message to the server or download a message from the server 
@@ -21,14 +21,14 @@ Some of the code in ttweetsrv.c was used or referenced from an echo server templ
 Some of the code in ttweetcl.c was used or referenced from an echo client template from CMU: http://www.cs.cmu.edu/afs/cs/academic/class/15213-f00/www/class24code/echoclient.c
 
 
-commands to compile and create an executable for server and client:
+**commands to compile and create an executable for server and client:**
 
 gcc ttweetsrv.c -o ttweetsrv
 
 gcc ttweetcl.c -o ttweetcl
 
 
-instructions for running the programs:
+**instructions for running the programs:**
 
 server: ./ttweetsrv <ServerPort>
   
@@ -39,7 +39,8 @@ client upload: ./ttweetcl -u <ServerIP> <ServerPort> "message"
 
 Sample output in in Sample.txt
 
-Protocol Description:
+**Protocol Description:**
+  
 When the client has an error in the arguments the client recieves these error messages: Correct Usage for upload: ./c -u <ServerIP> <ServerPort> "message", Correct Usage for download: ./c -d <ServerIP> <ServerPort>
   
 When a client connects to the server, the server will output: Handling client <IP>
