@@ -7,7 +7,7 @@ Class: CS3251 Computer Networks 1
 
 Date: 06/14/2021
 
-Assignment: Trivial Twitter application (Programming Assignment 1)
+Assignment: Trivial Twitter application (Project 1)
 
 
 **Files:**
