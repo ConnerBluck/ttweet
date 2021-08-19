@@ -16,21 +16,32 @@ Some of the code in ttweetcl.c was used or referenced from an echo client templa
 
 
 commands to compile and create an executable for server and client:
+
 gcc ttweetsrv.c -o ttweetsrv
+
 gcc ttweetcl.c -o ttweetcl
 
+
 instructions for running the programs:
+
 server: ./ttweetsrv <ServerPort>
+  
 client download: ./ttweetcl -d <ServerIP> <ServerPort>
+  
 client upload: ./ttweetcl -u <ServerIP> <ServerPort> "message"
+  
 
 Sample output in in Sample.txt
 
 Protocol Description:
 When the client has an error in the arguments the client recieves these error messages: Correct Usage for upload: ./c -u <ServerIP> <ServerPort> "message", Correct Usage for download: ./c -d <ServerIP> <ServerPort>
+  
 When a client connects to the server, the server will output: Handling client <IP>
+  
 When the client tries to upload a message >150 characters, they will get an error and the message will not be uploaded
+  
 The client can upload any ascii text message 150 characters or less.
+  
 When the client requests to download from the server, the server will respond by sending the previous uploaded message or "EMPTY message" if no message has been uploaded.
 
 
