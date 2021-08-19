@@ -1,0 +1,37 @@
+0 - server not running
+
+1 - ./ttweetcl -u 127.0.0.1 13000 "hello world"
+Output: Error Connecting: Server Not Found
+
+2 - ./ttweetcl -d 127.0.0.1 13000
+Output: Error Connecting: Server Not Found
+
+3 - ./ttweetsrv 13000
+*Server is now running*
+
+4 - ./ttweetcl -d 127.0.0.1 13000
+Output: EMPTY Message
+
+5 - ./ttweetcl -u 127.0.0.1 13000 "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901"
+Output: Error: maximum tweet lenght is 150
+
+6 - ./ttweetcl -d 127.0.0.1 13000
+Output: EMPTY Message
+
+7 - ./ttweetcl -u 127.0.0.1 13000 "hello world"
+Output: Upload Successful
+
+8 - ./ttweetcl -d 127.0.0.1 13000
+Output: hello world
+
+9 - ./ttweetcl -u 127.0.0.1 13000 "networking"
+Output: Upload Successful
+
+10 - ./ttweetcl -d 127.0.0.1 13000
+Output: networking
+
+11 - ./ttweetcl -u 127.0.0.1 13000 "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901"
+Output: Error: maximum tweet lenght is 150
+
+12 - ./ttweetcl -d 127.0.0.1 13000
+Output: networking
