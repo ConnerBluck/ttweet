@@ -13,7 +13,9 @@ Assignment: Trivial Twitter application (Project 1)
 **Files:**
 
 ttweetsrv.c - A simple TCP connection-based server. The server listens for a request from the client and sends back the appropriate message 
+
 ttweetcl.c - A simple TCP connection-based client. The client can upload a message to the server or download a message from the server 
+
 sample.txt - A sample output for the provided test scenario
 
 Some of the code in ttweetsrv.c was used or referenced from an echo server template from CMU: http://www.cs.cmu.edu/afs/cs/academic/class/15213-f00/www/class24code/echoserver.c
