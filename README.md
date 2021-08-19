@@ -1,11 +1,17 @@
 # ttweet
 Author: Conner Bluck
+
 Email: cbluck3@gatech.edu
+
 Class: CS3251 Computer Networks 1
+
 Date: 06/14/2021
+
 Assignment: Trivial Twitter application (Programming Assignment 1)
 
+
 Files:
+
 ttweetsrv.c - A simple TCP connection-based server. The server listens for a request from the client and sends back the appropriate message 
 ttweetcl.c - A simple TCP connection-based client. The client can upload a message to the server or download a message from the server 
 sample.txt - A sample output for the provided test scenario
